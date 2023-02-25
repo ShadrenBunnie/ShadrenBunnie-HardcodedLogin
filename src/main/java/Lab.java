@@ -13,8 +13,44 @@ public class Lab {
      * @param username a String that represents a username.
      * @param password a String that represents a password.
      * @return true if there is a successful login, and false otherwise.
-     */
+     */ 
+    
+     /** Logical think/plan to write the code.
+      * The challenge is to test if the password is correct, or 'true', under both usernames.
+         * Admin password must = string of "qwerty".
+         *if username = admin
+         *  if password = "qwerty"
+         *      return true;
+         *  else 
+         *      return false;
+         * 
+         * user password must = string of "password".
+         * if username = user
+         *      if password = "password"
+         *          return true;
+         *      else
+         *          return false;
+         */
     public boolean login(String username, String password){
+ 
+        if (username == "admin") {
+            if(password == "qwerty"){
+                
+                return true;
+
+            }else {
+                return false;
+            }
+
+            
+        } else if (username == "user") {
+            if(password == "password"){
+                return true;
+            }else{
+                return false;
+            }
+            
+        }
         return false;
     }
 }
